@@ -1,0 +1,89 @@
+*{
+    font-family: 'Manrope';
+}
+body{
+    background: #F1F5FE
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.title, .register{
+    width: 450px;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    background-image: url('images/pattern-circles.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.register{
+    background: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 30px;
+    /* height: 200px; */
+    align-content: space-between;
+    display: grid;
+}
+
+.pricing input[type="range"]{
+    width: 100%;
+    margin: 30px 0;
+}
+.register .display{
+    display: flex;
+    justify-content: space-between;
+}
+.register .pricing h6{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center
+}
+.register .pricing h3{
+    font-size: 40px;
+    display: flex;
+    color: hsl(227, 35%, 25%);
+}
+.register .pricing span{
+    font-size: 14px;
+    margin-top: 10px;
+    color: hsl(225, 20%, 60%);
+}
+.register .pricing h6, .register .pricing h3{
+    width: fit-content;
+    margin: 0;
+}
+.register .pricing .time-option{
+    text-align: end;
+}
+.info{
+    display: flex;
+    vertical-align: middle;
+    justify-content: space-between;
+    align-items: center;
+}
+.info ul{
+    padding: 0;
+}
+.info li{
+    list-style: none;
+    color: hsl(225, 20%, 60%);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+.info li img{
+    padding-right: 10px;
+}
+.info button{
+    height: 30px;
+    color: hsl(225, 20%, 60%);
+    background: hsl(227, 35%, 25%);
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+    align-items: center;
+    display: flex;
+}
