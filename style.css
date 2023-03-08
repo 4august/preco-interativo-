@@ -26,39 +26,52 @@ body{
     align-content: space-between;
     display: grid;
 }
-
-.pricing input[type="range"]{
+ input[type="range"]{
     width: 100%;
     margin: 30px 0;
+    background: hsl(174, 86%, 45%);
 }
 .register .display{
     display: flex;
     justify-content: space-between;
 }
-.register .pricing h6{
+.register h6, .register .display span{
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
-    align-items: center
+    align-items: center;
+    color: hsl(225, 20%, 60%);
+
 }
-.register .pricing h3{
+.register h3{
     font-size: 40px;
     display: flex;
     color: hsl(227, 35%, 25%);
 }
-.register .pricing span{
+.register {
     font-size: 14px;
     margin-top: 10px;
     color: hsl(225, 20%, 60%);
 }
-.register .pricing h6, .register .pricing h3{
+.register h6, .register h3{
     width: fit-content;
     margin: 0;
 }
-.register .pricing .time-option{
-    text-align: end;
+.register .time-option{
+    justify-content: end;
+    display: flex;
+    margin: 0 3%;
 }
+.register .time-option p{margin: 0 5px;}
+.time-option .discount {
+    background: hsl(14, 92%, 95%);
+    padding: 1px 4px;
+    border-radius: 25px;
+    color: hsl(15, 100%, 70%);
+    margin: 0 5px;
+}
+
 .info{
     display: flex;
     vertical-align: middle;
@@ -87,3 +100,63 @@ body{
     align-items: center;
     display: flex;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 25px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
